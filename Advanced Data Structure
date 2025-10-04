@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+
+std::vector<int> numbers = {3, 5, 1, 8, 2, 7, 4, 6};
+int max_number = numbers [0];
+int min_number = numbers[0];
+
+for (int current_number : numbers) {
+    if (current_number > max_number) {
+        max_number = current_number;
+    }
+    if (current_number < min_number) {
+        min_number = current_number;
+    }
+}
+
+std::cout << "Max number: " << max_number << std::endl;
+std::cout << "Min number: " << min_number << std::endl;
